@@ -1,0 +1,194 @@
+/* PAGE BACKGROUND */
+.register-wrapper {
+  min-height: 100vh;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.register-card {
+  width: 360px;
+  padding: 50px 30px 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.input-field {
+  width: 80%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #160c0c;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* BUTTON */
+.submit-btn {
+  width: 35%;
+  margin-top: 25px;
+  padding: 12px;
+  background: white;
+  color: #ff5722;
+  border: 2px solid #ff5722;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #ff5722;
+  color: white;
+}
+
+/* SWITCH TEXT */
+.switch-text {
+  margin-top: 28px;
+  font-size: 15px;
+  color: #0a0909;
+}
+
+.switch-text span {
+  color: #ff5722;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ERROR MESSAGE */
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.password-hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.error-text {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* 📱 REGISTER PAGE RESPONSIVE */
+/* ============================= */
+
+/* Tablets & small devices */
+@media (max-width: 768px) {
+
+  .register-wrapper {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .register-card {
+    width: 100%;
+    max-width: 380px;
+    padding: 55px 25px 35px;
+    border-radius: 18px;
+  }
+
+  .eye-wrapper {
+    width: 150px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+
+  .register-subtitle {
+    font-size: 11px;
+  }
+
+  .register-input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .register-btn {
+    width: 60%;
+  }
+}
+
+
+/* 📱 Small phones (iPhone SE) */
+@media (max-width: 480px) {
+
+  .register-wrapper {
+    padding: 15px;
+  }
+
+  .register-card {
+    padding: 48px 20px 28px;
+    border-radius: 14px;
+  }
+
+  .eye-wrapper {
+    width: 130px;
+    height: 90px;
+    top: -42px;
+  }
+
+  .register-title {
+    font-size: 18px;
+  }
+
+  .register-input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+  }
+
+  .register-btn {
+    width: 75%;
+    padding: 11px;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .switch-text {
+    font-size: 14px;
+  }
+}
+
+
+/* 📱 Extra small phones (final polish) */
+@media (max-width: 420px) {
+
+  .eye-wrapper {
+    top: -36px;
+    width: 120px;
+    height: 80px;
+  }
+
+  .register-card {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+}

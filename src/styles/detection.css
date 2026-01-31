@@ -1,0 +1,143 @@
+/* ===== PAGE BASE ===== */
+body {
+  background-color: #f8f8f8;
+}
+
+/* ===== MAIN PAGE ===== */
+.detect-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:transparent;
+}
+
+/* ===== TITLE ===== */
+.detect-heading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ff5722;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+/* ===== CARD (LIKE LOGIN PAGE) ===== */
+.detect-card {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 30px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 80px;
+}
+
+/* ===== CAMERA IMAGE ===== */
+.detect-camera-img {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+/* ===== TEXT INSIDE CARD ===== */
+.detect-text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-top: 4px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* ===== CAMERA OUTPUT ===== */
+.camera-box {
+  width: 700px;
+  height: 450px;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.2);
+  background: black;
+}
+
+/* HIDE RAW VIDEO */
+.hidden-video {
+  display: none;
+}
+
+/* ===== BUTTON GROUP ===== */
+.detect-btn-group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+/* ===== BUTTON BASE (SAME SIZE) ===== */
+.start-btn,
+.home-btn,
+.finish-btn {
+  width: 220px;              /* SAME WIDTH */
+  height: 52px;              /* SAME HEIGHT */
+  font-size: 17px;
+  border-radius: 10px;
+  font-weight: 550;
+  cursor: pointer;
+  border: none;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== BUTTON COLORS ===== */
+.start-btn {
+  background: #ff5722;
+  color: #fff;
+}
+
+.home-btn {
+  background: #777;
+  color: #fff;
+}
+
+.finish-btn {
+  background: #333;
+  color: #fff;
+}
+
+/* ===== HOVER EFFECTS ===== */
+.start-btn:hover {
+  background: #e24613;
+}
+
+.home-btn:hover {
+  background: #555;
+}
+
+.finish-btn:hover {
+  background: #000;
+}
+
+/* ===== CAMERA MODE ===== */
+.detect-card canvas {
+  border-radius: 14px;
+} 
+
+/* REMOVE UNDERLINE FROM LINK WRAPPING BUTTON */
+.detect-btn-group a {
+  text-decoration: none;
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .detect-card {
+    width: 90%;
+  }
+
+  .camera-box {
+    width: 100%;
+    height: auto;
+  }
+}

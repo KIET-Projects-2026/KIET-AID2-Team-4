@@ -1,0 +1,240 @@
+/* ============================= */
+/* 🔥 PAGE BACKGROUND */
+/* ============================= */
+
+.login-wrapper {
+  min-height: 100vh;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================= */
+/* 🔥 WHITE CARD */
+/* ============================= */
+
+.login-card {
+  width: 360px;
+  padding: 60px 30px 40px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+}
+
+/* ============================= */
+/* 🔥 EYE POSITION */
+/* ============================= */
+
+.eye-wrapper {
+  position: absolute;
+  top: -59px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================= */
+/* 🔥 EYE ANIMATIONS */
+/* ============================= */
+
+/* Blink Animation */
+@keyframes blink {
+  0%, 7%, 100% { transform: scaleY(1); }
+  3% { transform: scaleY(0.1); }
+}
+
+/* Pupil slight random movement */
+@keyframes pupilMove {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(1px, 1px); }
+}
+
+/* Eye bounce when loading */
+@keyframes eyeBounce {
+  0% { transform: translateY(-20px) scale(0.9); opacity: 0; }
+  60% { transform: translateY(4px) scale(1.05); opacity: 1; }
+  100% { transform: translateY(0) scale(1); }
+}
+
+.animated-eye {
+  animation: eyeBounce 0.9s ease-out forwards;
+}
+
+.eye-lid {
+  transform-origin: center;
+  animation: blink 4s infinite ease-in-out;
+}
+
+.pupil {
+  animation: pupilMove 4s infinite ease-in-out;
+}
+
+/* ============================= */
+/* 🔥 TEXT */
+/* ============================= */
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #1a1717;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 25px;
+}
+
+/* ============================= */
+/* 🔥 INPUTS */
+/* ============================= */
+
+.input-field {
+  width: 80%;
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #160c0c;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* ============================= */
+/* 🔥 BUTTON */
+/* ============================= */
+
+/* Submit button (WHITE with ORANGE BORDER like screenshot) */
+.submit-btn {
+  width: 35%;
+  margin-top: 25px;
+  padding: 12px;
+  background: white;
+  color: #ff5722;
+  border: 2px solid #ff5722;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Hover effect: fills with orange */
+.submit-btn:hover {
+  background: #ff5722;
+  color: white;
+}
+
+
+/* ============================= */
+/* 🔥 SWITCH TEXT */
+/* ============================= */
+
+.switch-text {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #0a0909;
+}
+
+.switch-text span {
+  color: #ff5722;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error-text {
+  color: red;
+  margin-top: 12px;
+}
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVENESS */
+/* ============================= */
+
+/* Tablets & small devices */
+@media (max-width: 768px) {
+
+  .login-wrapper {
+    padding: 20px;
+  }
+
+  .login-card {
+    width: 100%;
+    max-width: 360px;
+    padding: 55px 25px 35px;
+  }
+
+  .eye-wrapper {
+    width: 150px;
+    height: 100px;
+    top: -50px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .input-field {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 60%;
+  }
+}
+
+
+/* Small phones (iPhone SE etc.) */
+@media (max-width: 480px) {
+
+  .login-wrapper {
+    padding: 15px;
+  }
+
+  .login-card {
+    padding: 50px 20px 30px;
+    border-radius: 14px;
+    width: 80%;
+    height: 50%;
+  }
+
+  .eye-wrapper {
+    width: 130px;
+    height: 90px;
+    top: -45px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    width: 75%;
+    padding: 11px;
+    font-size: 14px;
+  }
+
+  .switch-text {
+    font-size: 14px;
+  }
+}
